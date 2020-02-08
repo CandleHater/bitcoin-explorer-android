@@ -20,5 +20,9 @@ Bitcoin Explorer for Android is released under the terms of the MIT license. See
 
 ## TODOs
 - tx list in block detail
-- caching
+- make Esplora HTTP API configurable
+- search by tx, hash, transaction and address
+- caching / request reduction
+    - optimise blockList management (don't reset)
 - auto reload refresh
+- moon
