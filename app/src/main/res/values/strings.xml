@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Bitcoin Explorer</string>
+    <string name="title_block_list">Bitcoin Blocks</string>
+    <string name="block_search_hint">Search a block by height..</string>
+
+    <string name="loading_blocks">Loading Bitcoin blocks..</string>
+    <string name="loading_blocks_error">An error occurred, please try again later</string>
+    <string name="loading_blocks_success">Block list updated</string>
+
+    <string name="block_detail_instructions">
+        Select a Bitcoin block from the left pane to display more information
+    </string>
+
+    <string name="block">Block</string>
+    <string name="hash">Hash</string>
+    <string name="height">Height</string>
+    <string name="timestamp">Timestamp</string>
+    <string name="transactions">Transactions</string>
+    <string name="size">Size</string>
+    <string name="size_and_unit">Size (KB)</string>
+    <string name="size_unit">KB</string>
+    <string name="size_virtual">Virtual size</string>
+    <string name="size_virtual_unit">vKB</string>
+    <string name="weight_units">Weight Units</string>
+    <string name="weight_unit">KWU</string>
+    <string name="weight_and_unit">Weight (KWU)</string>
+    <string name="version">Version</string>
+    <string name="merkle_root">Merkle root</string>
+    <string name="bits">Bits</string>
+    <string name="nonce">Nonce</string>
+    <string name="searching">Serching..</string>
+</resources>

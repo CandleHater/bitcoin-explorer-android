@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    tools:context=".BlockDetailFragment">
+
+    <!-- only shown on tablets, when no block was selected yet -->
+    <TextView
+        android:id="@+id/introductionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/block_detail_instructions"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <!-- block details -->
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:orientation="horizontal"
+        android:stretchColumns="1"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TableRow android:layout_marginBottom="@dimen/margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/height"
+                android:textAllCaps="true"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/colorAccent"
+                android:textIsSelectable="true"
+                tools:ignore="RtlHardcoded"
+                tools:text="163 638" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="@dimen/margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timestamp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:selectAllOnFocus="true"
+                android:textIsSelectable="true"
+                tools:text="2/2/2020, 5:08:00 PM GMT+1" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="@dimen/margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/transactions"
+                android:textAllCaps="true"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/transactions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:selectAllOnFocus="true"
+                android:textIsSelectable="true"
+                tools:text="3524" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="@dimen/margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/size"
+                android:textAllCaps="true"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:selectAllOnFocus="true"
+                android:textIsSelectable="true"
+                tools:text="1252.554" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="@dimen/margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/size_virtual"
+                android:textAllCaps="true"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/size_virtual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:selectAllOnFocus="true"
+                android:textIsSelectable="true"
+                tools:text="1252.554" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="@dimen/margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weight_units"
+                android:textAllCaps="true"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:selectAllOnFocus="true"
+                android:textIsSelectable="true"
+                tools:text="1252.554" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="@dimen/margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/version"
+                android:textAllCaps="true"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:selectAllOnFocus="true"
+                android:textIsSelectable="true"
+                tools:text="0x20c00000" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="@dimen/margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bits"
+                android:textAllCaps="true"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/bits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:selectAllOnFocus="true"
+                android:textIsSelectable="true"
+                tools:text="0x20c00000" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="@dimen/margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nonce"
+                android:textAllCaps="true"
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/nonce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:selectAllOnFocus="true"
+                android:textIsSelectable="true"
+                tools:text="0x20c00000" />
+
+        </TableRow>
+
+        <TextView
+            android:layout_marginBottom="@dimen/margin_half"
+            android:text="@string/merkle_root"
+            android:textAllCaps="true"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/merkle_root"
+            android:layout_marginBottom="@dimen/margin"
+            android:selectAllOnFocus="true"
+            android:textIsSelectable="true"
+            tools:text="7e8568b85548a151991d4aee303e0f26bc47a095bd4156cd3d31ecb80af45b93" />
+
+        <TextView
+            android:layout_marginBottom="@dimen/margin_half"
+            android:text="@string/hash"
+            android:textAllCaps="true"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/hash"
+            android:layout_marginBottom="@dimen/margin"
+            android:selectAllOnFocus="true"
+            android:textIsSelectable="true"
+            tools:text="000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f" />
+    </TableLayout>
+</LinearLayout>
